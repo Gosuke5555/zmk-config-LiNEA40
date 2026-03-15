@@ -62,7 +62,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -77,7 +77,7 @@
         };
 
         CenterClick {
-            bindings = <&kp F3>;
+            bindings = <&kp RC(UP_ARROW)>;
             key-positions = <17 16>;
         };
 
@@ -99,6 +99,11 @@
         bar {
             bindings = <&kp MINUS>;
             key-positions = <8 9>;
+        };
+
+        voiceCommand {
+            bindings = <&kp C_VOICE_COMMAND>;
+            key-positions = <13 12>;
         };
     };
 
@@ -123,10 +128,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W                          &kp E                          &kp R    &kp T                                      &kp Y        &kp U  &kp I                   &kp O                  &kp P
-&kp A             &kp S                          &kp D                          &kp F    &kp G                                      &kp H        &kp J  &kp K                   &kp L                  &lt 5 SEMICOLON
-&mt LEFT_SHIFT Z  &kp X                          &kp C                          &kp V    &kp B                                      &kp N        &kp M  &kp COMMA               &kp DOT                &mt RIGHT_SHIFT LC(QUESTION)
-&mt LEFT_GUI ESC  &mt LEFT_ALT LS(RG(NUMBER_4))  &mt C_VOICE_COMMAND LC(SPACE)  &kp INS  &lt 2 DEL  &lt 3 SPACE    &lt 3 BACKSPACE  &lt 2 ENTER         &lt 6 LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &mt RIGHT_SHIFT SLASH
+&kp Q             &kp W                          &kp E          &kp R    &kp T                                      &kp Y        &kp U  &kp I                   &kp O                  &kp P
+&kp A             &kp S                          &kp D          &kp F    &kp G                                      &kp H        &kp J  &kp K                   &kp L                  &lt 5 SEMICOLON
+&mt LEFT_SHIFT Z  &kp X                          &kp C          &kp V    &kp B                                      &kp N        &kp M  &kp COMMA               &kp DOT                &mt RIGHT_SHIFT LC(QUESTION)
+&mt LEFT_GUI ESC  &mt LEFT_ALT LS(RG(NUMBER_4))  &kp LC(SPACE)  &kp INS  &lt 2 DEL  &lt 3 SPACE    &lt 3 BACKSPACE  &lt 2 ENTER         &lt 6 LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &mt RIGHT_SHIFT SLASH
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
