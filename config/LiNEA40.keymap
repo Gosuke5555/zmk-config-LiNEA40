@@ -62,7 +62,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -165,10 +165,10 @@
 
         CURSOR {
             bindings = <
-&trans    &kp MINUS  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3                          &kp KP_MULTIPLY  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_PLUS
-&trans    &kp PLUS   &kp NUMBER_4  &kp N5        &kp NUMBER_6                          &kp KP_SLASH     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp DQT
-&kp HOME  &kp EQUAL  &kp N7        &kp N8        &kp N9                                &kp UNDER        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SQT
-&trans    &trans     &trans        &trans        &kp NUMBER_0  &kp MINUS    &kp ENTER  &kp NUMBER_0                   &kp DOT       &kp ENTER     &kp QUESTION
+&kp SLASH     &kp MINUS  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3                          &kp KP_MULTIPLY  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_PLUS
+&kp ASTERISK  &kp PLUS   &kp NUMBER_4  &kp N5        &kp NUMBER_6                          &kp KP_SLASH     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp DQT
+&kp COMMA     &kp EQUAL  &kp N7        &kp N8        &kp N9                                &kp UNDER        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SQT
+&trans        &kp SLASH  &kp PERIOD    &trans        &kp NUMBER_0  &kp MINUS    &kp ENTER  &kp NUMBER_0                   &kp DOT       &kp ENTER     &kp QUESTION
             >;
         };
 
