@@ -58,6 +58,16 @@
 };
 
 &trackball_listener {
+    cursor_scroller {
+        layers = <CURSOR>;
+        input-processors =
+            <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
+            <&zip_xy_to_scroll_mapper>;
+    };
+    function_scroller {
+        layers = <FUNCTION>;
+        input-processors = <&zip_xy_to_scroll_mapper>;
+    };
     scroller {
         layers = <SCROLL>;
         input-processors =
