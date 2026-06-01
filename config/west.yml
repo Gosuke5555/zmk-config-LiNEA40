@@ -2,8 +2,6 @@ manifest:
   remotes:
     - name: cormoran
       url-base: https://github.com/cormoran
-    - name: gosuke
-      url-base: https://github.com/Gosuke5555
     - name: inorichi
       url-base: https://github.com/inorichi
     - name: caksoylar
@@ -13,9 +11,6 @@ manifest:
       remote: cormoran
       revision: v0.3-branch+dya
       import: app/west.yml
-    - name: zmk-module-runtime-input-processor
-      remote: gosuke
-      revision: main
     - name: zmk-module-settings-rpc
       remote: cormoran
       revision: main
