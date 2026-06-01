@@ -1,6 +1,7 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 150
 
 #include <dt-bindings/zmk/input_transform.h>
+#include <input/processors/runtime-input-processor.dtsi>
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <behaviors.dtsi>
@@ -58,9 +59,11 @@
 };
 
 &trackball_listener {
+input-processors = <&mouse_runtime_input_processor>;
     scroller {
         layers = <SCROLL>;
         input-processors =
+            <&scroll_runtime_input_processor>,
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
             //スクロール方向を逆転,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
