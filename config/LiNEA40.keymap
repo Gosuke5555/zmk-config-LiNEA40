@@ -74,7 +74,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -88,8 +88,8 @@
             key-positions = <7 8>;
         };
 
-        CenterClick {
-            bindings = <&kp RC(UP_ARROW)>;
+        Lay4_Center {
+            bindings = <&lt 4 RC(UP_ARROW)>;
             key-positions = <17 16>;
         };
 
