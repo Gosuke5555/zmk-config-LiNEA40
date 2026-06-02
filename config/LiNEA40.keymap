@@ -74,7 +74,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -88,13 +88,13 @@
             key-positions = <7 8>;
         };
 
-        Lay4_Center {
-            bindings = <&lt 4 RC(UP_ARROW)>;
+        Center {
+            bindings = <&kp RC(UP_ARROW)>;
             key-positions = <17 16>;
         };
 
         RightClick {
-            bindings = <&mkp MB2>;
+            bindings = <&lt 3 ESCAPE>;
             key-positions = <18 17>;
         };
 
