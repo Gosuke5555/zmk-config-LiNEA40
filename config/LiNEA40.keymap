@@ -74,7 +74,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -132,6 +132,11 @@
             bindings = <&kp RG(SPACE)>;
             key-positions = <13 35>;
         };
+
+        N-Voice-Command {
+            bindings = <&kp RG(LC(C_VOICE_COMMAND))>;
+            key-positions = <34 23>;
+        };
     };
 
     behaviors {
@@ -161,7 +166,7 @@
 &mt LEFT_GUI ESC  &mt RS(RG(NUMBER_5)) LS(RG(NUMBER_4))  &kp LC(SPACE)  &kp INS  &lt 2 BACKSPACE  &lt 3 SPACE    &lt 3 BACKSPACE  &lt 2 ENTER         &lt 6 LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &mt RIGHT_SHIFT EQUAL
             >;
 
-            sensor-bindings = <&mouse_scrl SCRL_UP SCRL_DOWN>;
+            sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
         };
 
         //1
@@ -185,7 +190,7 @@
 &kp LEFT_COMMAND  &kp LS(LEFT_COMMAND)  &trans           &trans              &kp DELETE     &kp SPACE    &kp BACKSPACE  &kp ENTER                            &kp LEFT_ARROW        &kp DOWN_ARROW         &kp RIGHT
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            sensor-bindings = <&mouse_scrl SCRL_RIGHT SCRL_LEFT>;
         };
 
         //3
