@@ -74,7 +74,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -109,7 +109,7 @@
         };
 
         voiceCommand {
-            bindings = <&kp LG(T)>;
+            bindings = <&kp F13>;
             key-positions = <13 12>;
         };
 
@@ -197,10 +197,10 @@
 
         CURSOR {
             bindings = <
-&kp TAB       &kp MINUS  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3                              &kp F1     &kp F2   &kp F3              &kp F4              &kp F5
-&kp ASTERISK  &kp PLUS   &kp NUMBER_4  &kp N5        &kp NUMBER_6                              &kp F6     &kp F7   &kp F8              &kp F9              &kp F10
-&kp COMMA     &kp EQUAL  &kp N7        &kp N8        &kp N9                                    &kp F11    &kp F12  &trans              &kp RG(UP_ARROW)    &trans
-&trans        &kp SLASH  &kp PERIOD    &trans        &kp NUMBER_0  &kp MINUS    &kp BACKSPACE  &kp ENTER           &kp RG(LEFT_ARROW)  &kp RG(DOWN_ARROW)  &kp RG(RIGHT)
+&kp TAB               &kp MINUS  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3                              &kp F1     &kp F2   &kp F3              &kp F4              &kp F5
+&kp ASTERISK          &kp PLUS   &kp NUMBER_4  &kp N5        &kp NUMBER_6                              &kp F6     &kp F7   &kp F8              &kp F9              &kp F10
+&mt LEFT_SHIFT COMMA  &kp EQUAL  &kp N7        &kp N8        &kp N9                                    &kp F11    &kp F12  &trans              &kp RG(UP_ARROW)    &kp RIGHT_SHIFT
+&kp LEFT_GUI          &kp SLASH  &kp PERIOD    &trans        &kp NUMBER_0  &kp MINUS    &kp BACKSPACE  &kp ENTER           &kp RG(LEFT_ARROW)  &kp RG(DOWN_ARROW)  &kp RG(RIGHT)
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
